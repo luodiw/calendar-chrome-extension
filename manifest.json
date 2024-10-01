@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Calendar Wizard",
+  "author": "Luodi Wang <lwang4319@gmail.com>",
+  "version": "1.0.0",
+  "description": "A Chrome extension that automates your Google Calendar events.",
+  "permissions": [],
+  "host_permissions": ["*://calendar.google.com/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://calendar.google.com/*"],
+      "js": ["src/main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "48": "src/assets/small_icon.png",
+      "128": "src/assets/large_icon.png"
+    }
+  },
+  "icons": {
+    "48": "src/assets/small_icon.png",
+    "128": "src/assets/large_icon.png"
+  }
+}

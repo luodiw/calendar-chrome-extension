@@ -1,0 +1,10 @@
+prepare:
+  steps:
+    - name: Install dependencies
+      command: pnpm
+test:
+  steps: []
+run:
+  steps:
+    - name: Start server
+      command: pnpm start

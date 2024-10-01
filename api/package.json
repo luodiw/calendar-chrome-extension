@@ -1,0 +1,22 @@
+{
+  "name": "cal-api",
+  "version": "1.0.0",
+  "description": "Calendar Wizard API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^3.3.1",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.0.0",
+    "express-rate-limit": "^7.1.5",
+    "moment-timezone": "^0.5.45",
+    "nodemon": "^3.0.3",
+    "openai": "^4.0.0"
+  },
+  "type": "module"
+}
